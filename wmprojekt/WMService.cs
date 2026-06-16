@@ -89,5 +89,15 @@ namespace wmprojekt
         {
             return repository.LadeErgebnisse();
         }
+
+        public Mannschaft GetBesteMannschaft()
+        {
+            // Schritt 1: Tabelle sortiert holen
+            List<Mannschaft> tabelle = GetTabelle();
+            // Schritt 2: Erste Mannschaft zurueckgeben
+            // (die hat die meisten Punkte!)
+            return tabelle[0];
+        }
+
     }
 }

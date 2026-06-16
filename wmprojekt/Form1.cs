@@ -48,5 +48,11 @@ namespace wmprojekt
                 dgvTabelle.DataSource = service.GetTabelle();
             }
         }
+
+        private void btnbeste_Click(object sender, EventArgs e)
+        {
+            Mannschaft beste = service.GetBesteMannschaft();
+            MessageBox.Show("Beste Mannschaft: " + beste.Name);
+        }
     }
 }

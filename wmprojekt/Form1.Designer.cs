@@ -40,6 +40,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.cmboxHeim = new System.Windows.Forms.ComboBox();
             this.cboxGast = new System.Windows.Forms.ComboBox();
+            this.btnbeste = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1ToreHeim)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownToreGast)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTabelle)).BeginInit();
@@ -51,7 +52,7 @@
             this.label1.Location = new System.Drawing.Point(15, 26);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(325, 25);
+            this.label1.Size = new System.Drawing.Size(400, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "WM 2026 Gruppe E Tippwand";
             // 
@@ -61,7 +62,7 @@
             this.label2.Location = new System.Drawing.Point(15, 88);
             this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(116, 25);
+            this.label2.Size = new System.Drawing.Size(145, 31);
             this.label2.TabIndex = 1;
             this.label2.Text = "Heimteam";
             // 
@@ -71,7 +72,7 @@
             this.label3.Location = new System.Drawing.Point(15, 147);
             this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(112, 25);
+            this.label3.Size = new System.Drawing.Size(140, 31);
             this.label3.TabIndex = 2;
             this.label3.Text = "Gastteam";
             // 
@@ -81,7 +82,7 @@
             this.label4.Location = new System.Drawing.Point(15, 207);
             this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(60, 25);
+            this.label4.Size = new System.Drawing.Size(74, 31);
             this.label4.TabIndex = 3;
             this.label4.Text = "Tore";
             // 
@@ -104,7 +105,7 @@
             0,
             0});
             this.numericUpDown1ToreHeim.Name = "numericUpDown1ToreHeim";
-            this.numericUpDown1ToreHeim.Size = new System.Drawing.Size(63, 31);
+            this.numericUpDown1ToreHeim.Size = new System.Drawing.Size(63, 37);
             this.numericUpDown1ToreHeim.TabIndex = 5;
             // 
             // numericUpDownToreGast
@@ -116,7 +117,7 @@
             0,
             0});
             this.numericUpDownToreGast.Name = "numericUpDownToreGast";
-            this.numericUpDownToreGast.Size = new System.Drawing.Size(63, 31);
+            this.numericUpDownToreGast.Size = new System.Drawing.Size(63, 37);
             this.numericUpDownToreGast.TabIndex = 6;
             // 
             // label5
@@ -125,7 +126,7 @@
             this.label5.Location = new System.Drawing.Point(181, 207);
             this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(19, 25);
+            this.label5.Size = new System.Drawing.Size(23, 31);
             this.label5.TabIndex = 7;
             this.label5.Text = ":";
             // 
@@ -134,6 +135,7 @@
             this.dgvTabelle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTabelle.Location = new System.Drawing.Point(20, 383);
             this.dgvTabelle.Name = "dgvTabelle";
+            this.dgvTabelle.RowHeadersWidth = 51;
             this.dgvTabelle.Size = new System.Drawing.Size(553, 150);
             this.dgvTabelle.TabIndex = 8;
             // 
@@ -143,7 +145,7 @@
             this.label6.Location = new System.Drawing.Point(15, 355);
             this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(90, 25);
+            this.label6.Size = new System.Drawing.Size(110, 31);
             this.label6.TabIndex = 9;
             this.label6.Text = "Tabelle";
             // 
@@ -152,7 +154,7 @@
             this.cmboxHeim.FormattingEnabled = true;
             this.cmboxHeim.Location = new System.Drawing.Point(151, 80);
             this.cmboxHeim.Name = "cmboxHeim";
-            this.cmboxHeim.Size = new System.Drawing.Size(189, 33);
+            this.cmboxHeim.Size = new System.Drawing.Size(189, 38);
             this.cmboxHeim.TabIndex = 10;
             // 
             // cboxGast
@@ -160,14 +162,25 @@
             this.cboxGast.FormattingEnabled = true;
             this.cboxGast.Location = new System.Drawing.Point(151, 139);
             this.cboxGast.Name = "cboxGast";
-            this.cboxGast.Size = new System.Drawing.Size(189, 33);
+            this.cboxGast.Size = new System.Drawing.Size(189, 38);
             this.cboxGast.TabIndex = 11;
+            // 
+            // btnbeste
+            // 
+            this.btnbeste.Location = new System.Drawing.Point(319, 289);
+            this.btnbeste.Name = "btnbeste";
+            this.btnbeste.Size = new System.Drawing.Size(254, 43);
+            this.btnbeste.TabIndex = 12;
+            this.btnbeste.Text = "Beste";
+            this.btnbeste.UseVisualStyleBackColor = true;
+            this.btnbeste.Click += new System.EventHandler(this.btnbeste_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(625, 546);
+            this.Controls.Add(this.btnbeste);
             this.Controls.Add(this.cboxGast);
             this.Controls.Add(this.cmboxHeim);
             this.Controls.Add(this.label6);
@@ -181,7 +194,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -207,6 +220,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox cmboxHeim;
         private System.Windows.Forms.ComboBox cboxGast;
+        private System.Windows.Forms.Button btnbeste;
     }
 }
 
