@@ -99,5 +99,20 @@ namespace wmprojekt
             return tabelle[0];
         }
 
+        // Gibt die Mannschaft mit den meisten Toren zurueck
+        public Mannschaft GetTopTorschuetzer()
+        {
+            // Schritt 1: Erste Mannschaft als Start nehmen
+            Mannschaft beste = mannschaften[0];
+            // Schritt 2: Alle Mannschaften durchgehen
+            foreach (Mannschaft m in mannschaften)
+            {
+                if (m.Punkte > beste.Punkte)
+                    beste = m;
+            }
+            return beste;
+        }
+
+
     }
 }
