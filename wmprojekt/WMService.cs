@@ -107,7 +107,7 @@ namespace wmprojekt
             // Schritt 2: Alle Mannschaften durchgehen
             foreach (Mannschaft m in mannschaften)
             {
-                if (m.Punkte > beste.Punkte)
+                if (m.Tore > beste.Tore)
                     beste = m;
             }
             return beste;
